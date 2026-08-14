@@ -2,7 +2,7 @@
  * Generate a skill markdown file from an extracted workflow.
  */
 
-import type { ExtractedWorkflow } from './extractor.ts'
+import type { ExtractedWorkflow } from './extractor.js'
 
 export interface SkillMetadata {
   name: string

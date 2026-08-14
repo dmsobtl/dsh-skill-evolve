@@ -60,12 +60,12 @@ Agent:
 ## 配置
 
 ```yaml
-- id: skill-evolve
-  plugin: dsh-skill-evolve
-  config:
-    skillsDir: ./skills/learned    # 生成的 skill 存放目录
-    autoExtract: false             # 是否自动提取（未来功能）
-    minSteps: 3                    # 少于 N 步的不提取
+- insert:
+    - id: skill-evolve
+      name: dsh-skill-evolve
+      config:
+        skillsDir: ./skills/learned    # 生成的 skill 存放目录
+        minSteps: 3                    # 少于 N 步的不提取
 ```
 
 ## 与其他插件配合
